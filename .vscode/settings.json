@@ -1,0 +1,11 @@
+{
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.svelte-kit": true,
+    "**/.vercel": true,
+    "**/.vercel_build_output": true,
+    "**/package": true,
+    "**/build": true
+  }
+}

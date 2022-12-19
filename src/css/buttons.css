@@ -1,0 +1,24 @@
+.button {
+  display: block;
+  padding: calc(1rem - 1px) calc(1.5rem - 1px);
+  border: 1px solid;
+  border-radius: 9999px;
+  min-width: 8rem;
+  text-align: center;
+  &:hover {
+    color: var(--bg-color);
+    background-color: var(--color);
+    border-color: transparent;
+  }
+}
+
+.button,
+.copy a.button {
+  text-decoration: none;
+}
+
+.button--primary {
+  color: var(--bg-color);
+  background-color: var(--color);
+  border-color: transparent;
+}
