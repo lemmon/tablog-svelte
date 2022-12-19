@@ -9,6 +9,12 @@ export let data
 
 <svelte:head>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <!-- Analytics for Demo Website; you can safely remove this section -->
+  {#if data.host === 'tablogdemo.vercel.app'}<script
+      defer
+      data-domain="tablogdemo.vercel.app"
+      src="https://plausible.io/js/script.js"
+    ></script>{/if}
 </svelte:head>
 
 <PageLoader />
