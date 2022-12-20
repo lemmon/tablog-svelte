@@ -37,7 +37,7 @@
   text-decoration: underline;
   text-decoration-style: var(--text-decoration-style, solid);
   text-decoration-thickness: var(--text-decoration-thickness);
-  text-underline-offset: 2px;
+  text-underline-offset: var(--text-underline-offset);
 }
 
 .copy em {
