@@ -13,7 +13,7 @@ cp .env.example .env
 npm run dev
 ```
 
-This example is hooded to a dummy api built for demo purposes. You can easily connect this blog to any headless cms of your choice.
+This example is hooked to a dummy api built for demo purposes. You can easily connect this template to any headless cms of your choice; or create a flat-file blog using svelte-preprocess and mdsvex.
 
 ## License
 
