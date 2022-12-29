@@ -37,7 +37,7 @@ export let post
               {/if}
             </figure>
           {:else if block.type === 'actions'}
-            <aside class="row-wrap gap05">
+            <aside class="row-wrap gap05 h6 lh2">
               {#each block.actions as action}
                 <a class="button" class:button--primary={action.primary} href={action.url}>{action.label}</a>
               {/each}

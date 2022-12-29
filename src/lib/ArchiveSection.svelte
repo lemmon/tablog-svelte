@@ -21,10 +21,8 @@ export let limit = 5
     </ul>
   </div>
   {#if limit}
-    <aside class="px1 py2 md:p2">
-      <div class="h5 lh2">
-        <p><a href="/archive"><span class="ul">All posts</span> &rarr;</a></p>
-      </div>
+    <aside class="px1 py2 md:p2 row-wrap gap05 h6 lh2">
+      <a class="button" href="/archive">All posts &rarr;</a>
     </aside>
   {/if}
 </section>
