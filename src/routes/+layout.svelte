@@ -1,5 +1,5 @@
 <script>
-import '../css/index.css'
+import '/src/css/index.css'
 import config from '/src/config'
 import Logo from '$lib/Logo.svelte'
 import PageLoader from './PageLoader.svelte'

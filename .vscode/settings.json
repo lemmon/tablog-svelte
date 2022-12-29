@@ -7,5 +7,8 @@
     "**/.vercel_build_output": true,
     "**/package": true,
     "**/build": true
+  },
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
   }
 }

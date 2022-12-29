@@ -1,9 +1,10 @@
-import { API_URL } from '$env/static/private'
+import { loadPage } from '$lib/content'
 
 export async function load({ parent }) {
   const data = await parent()
+  const post = loadPage(data.posts[0].id)
 
   return {
-    post: await fetch(`${API_URL}/blog/${data.posts[0].id}`).then((x) => x.json()),
+    post,
   }
 }

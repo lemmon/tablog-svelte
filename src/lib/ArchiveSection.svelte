@@ -2,7 +2,9 @@
 import { format } from 'date-fns'
 import { page } from '$app/stores'
 import config from '/src/config'
-import Header from './Header.svelte'
+import Header from '$lib/Header.svelte'
+import Action from '$lib/Action.svelte'
+import Button from '$lib/Button.svelte'
 
 export let limit = 5
 </script>
@@ -21,8 +23,8 @@ export let limit = 5
     </ul>
   </div>
   {#if limit}
-    <aside class="px1 py2 md:p2 row-wrap gap05 h6 lh2">
-      <a class="button" href="/archive">All posts &rarr;</a>
-    </aside>
+    <Action class="px1 py2 md:p2">
+      <Button href="/archive">All posts &rarr;</Button>
+    </Action>
   {/if}
 </section>

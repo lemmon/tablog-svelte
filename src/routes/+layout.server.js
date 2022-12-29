@@ -1,8 +1,14 @@
-import { API_URL } from '$env/static/private'
+import { loadPages } from '$lib/content'
 
 export async function load({ url }) {
+  const all = loadPages()
+
+  const posts = all.filter((x) => x.date).sort((a, b) => new Date(b.date) - new Date(a.date))
+  const pages = all.filter((x) => !x.date).sort((a, b) => a.id.localeCompare(b.id))
+
   return {
     host: url.host,
-    ...(await fetch(`${API_URL}/blog`).then((x) => x.json())),
+    posts,
+    pages,
   }
 }

@@ -7,6 +7,7 @@
     "abrusco": "~0.22.0",
     "cssnano": "~5.1.0",
     "date-fns": "~2.29.0",
+    "mdsvex": "~0.10.0",
     "postcss": "~8.4.0",
     "postcss-import": "~15.1.0",
     "postcss-load-config": "~4.0.0",
