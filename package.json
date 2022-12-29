@@ -11,7 +11,6 @@
     "postcss-import": "~15.1.0",
     "postcss-load-config": "~4.0.0",
     "postcss-preset-env": "~7.8.0",
-    "suil": "~0.6.0",
     "svelte": "~3.55.0",
     "svelte-preprocess": "~5.0.0",
     "svelte2tsx": "~0.5.0",
