@@ -1,7 +1,7 @@
 <script>
 import { format } from 'date-fns'
+import CalendarIcon from 'svelte-bootstrap-icons/lib/Calendar.svelte'
 import config from '/src/config'
-import CalendarIcon from '$lib/icons/CalendarIcon.svelte'
 import Header from '$lib/Header.svelte'
 import Copy from '$lib/Copy.svelte'
 
