@@ -1,5 +1,12 @@
 {
   "type": "module",
+  "name": "tablog-svelte",
+  "private": true,
+  "repository": "lemmon/tablog-svelte",
+  "homepage": "https://github.com/lemmon/tablog-svelte",
+  "bugs": "https://github.com/lemmon/tablog-svelte/issues",
+  "author": "lemmon",
+  "license": "MIT",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "~5.0.0",
     "@sveltejs/adapter-auto": "~2.0.0",
