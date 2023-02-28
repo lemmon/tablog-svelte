@@ -1,6 +1,5 @@
 .copy {
-  --space-primary: 2.5rem;
-  --space-secondary: 2.5rem;
+  --space: 2.5rem;
 }
 
 .copy > div,
