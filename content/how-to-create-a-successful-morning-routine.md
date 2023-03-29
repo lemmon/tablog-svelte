@@ -11,7 +11,7 @@ A successful morning routine can set the tone for the entire day, helping us to 
 
 One of the key elements of a successful morning routine is to wake up at the same time each day, even on weekends and holidays. This helps to regulate our internal clock, and ensures that we get enough sleep each night.
 
-<Image src="/img/morning-720x.webp" srcset="/img/morning-1440x.webp 2x" width="720" height="480" />
+<Image src="/img/morning-v5-720x.webp" srcset="/img/morning-v5-1440x.webp 2x" width="720" height="480" />
 
 Once you have established a consistent wake-up time, the next step is to create a routine that works for you. This can include activities such as exercise, meditation, or journaling, as well as more practical tasks such as making the bed or getting dressed. The key is to find a routine that fits your schedule and your personal goals.
 
