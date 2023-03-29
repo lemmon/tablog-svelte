@@ -1,9 +1,11 @@
 <script>
 import { format } from 'date-fns'
-import CalendarIcon from 'svelte-bootstrap-icons/lib/Calendar.svelte'
 import config from '/src/config'
 import Header from '$lib/Header.svelte'
 import Copy from '$lib/Copy.svelte'
+
+import CalendarIcon from 'svelte-bootstrap-icons/lib/Calendar.svelte'
+import PinAngleFillIcon from 'svelte-bootstrap-icons/lib/PinAngleFill.svelte'
 
 export let post
 </script>
@@ -15,7 +17,8 @@ export let post
       {#if post.date}
         <aside class="px1 py1 md:px2">
           <a class="h5 lh2 inline-row items-center gap05" href="/{post.id}"
-            ><CalendarIcon /> <span class="ul">{format(new Date(post.date), config.dateFormat)}</span></a
+            >{#if post.pinned}<PinAngleFillIcon />{:else}<CalendarIcon />{/if}
+            <span class="ul">{format(new Date(post.date), config.dateFormat)}</span></a
           >
         </aside>
       {/if}

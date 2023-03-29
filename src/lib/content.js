@@ -11,6 +11,7 @@ export function loadPages() {
     id: x.id,
     title: x.meta.title,
     date: x.meta.date,
+    pinned: x.meta.pinned,
   }))
 }
 
