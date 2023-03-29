@@ -10,19 +10,19 @@
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "~5.0.0",
     "@sveltejs/adapter-auto": "~2.0.0",
-    "@sveltejs/kit": "~1.8.0",
+    "@sveltejs/kit": "~1.14.0",
     "abrusco": "~0.23.0",
-    "cssnano": "~5.1.0",
+    "cssnano": "~6.0.0",
     "date-fns": "~2.29.0",
     "mdsvex": "~0.10.0",
     "postcss": "~8.4.0",
     "postcss-import": "~15.1.0",
     "postcss-load-config": "~4.0.0",
-    "postcss-preset-env": "~8.0.0",
-    "svelte": "~3.55.0",
+    "postcss-preset-env": "~8.2.0",
+    "svelte": "~3.57.0",
     "svelte-bootstrap-icons": "~2.3.0",
     "svelte-preprocess": "~5.0.0",
-    "vite": "~4.1.0"
+    "vite": "~4.2.0"
   },
   "scripts": {
     "dev": "vite dev",
