@@ -16,7 +16,7 @@ export let post
       <Header>{post.title}</Header>
       {#if post.date}
         <aside class="px1 py1 md:px2">
-          <a class="h5 lh2 inline-row items-center gap05" href="/{post.id}"
+          <a class="h5 rlh4 inline-row items-center gap05" href="/{post.id}"
             >{#if post.pinned}<PinAngleFillIcon />{:else}<CalendarIcon />{/if}
             <span class="ul">{format(new Date(post.date), config.dateFormat)}</span></a
           >

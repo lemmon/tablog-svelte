@@ -14,7 +14,7 @@ export let limit = 5
 <section class="py2">
   <Header>Archive</Header>
   <div class="px1 py175 md:px2">
-    <ul class="h5 lh2">
+    <ul class="h5 rlh4">
       {#each $page.data.posts.slice(0, limit || Infinity) as item (item.id)}
         <li class="py025 row gap1"
           ><a class="row items-center gap05" style="min-width: 0px;" href="/{item.id}"
