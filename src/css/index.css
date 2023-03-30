@@ -25,7 +25,22 @@
 :root {
   --text-decoration-thickness: 1px;
   --text-underline-offset: 2px;
+
+  /* default colors */
+  --color: #040404;
+  --bg-color: #ffffff;
   --bg-shade: #f8f8f8;
+
+  @media (prefers-color-scheme: dark) {
+    /* dark mode */
+    --color: #f0f0f0;
+    --bg-color: #101010;
+    --bg-shade: #202020;
+  }
+
+  @media (prefers-color-scheme: light) {
+    /* light mode */
+  }
 }
 
 /* purgecss end ignore */
