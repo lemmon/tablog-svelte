@@ -9,8 +9,9 @@ function width() {
 }
 </script>
 
-{#if $navigating}{/if}
-<div in:width />
+{#if $navigating}
+  <div in:width />
+{/if}
 
 <style>
 div {
