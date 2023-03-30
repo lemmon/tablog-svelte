@@ -28,13 +28,21 @@ export let data
     <slot />
   </main>
 
-  <nav class="px05 py1 md:px15 h5 lh2">
-    <ul class="py075 row-wrap gapx15">
+  <nav class="py1 md:p1 h5 lh2">
+    <ul class="p05 row-wrap gapx15">
       {#each data.pages as item (item.id)}
-        <li><a class="block px05 py025 ul" href="/{item.id}">{item.title}</a></li>
+        <li><a class="block p05 ul" href="/{item.id}">{item.title}</a></li>
       {/each}
-      <li><a class="row gap0125 px05 py025 ul" href="https://www.github.com/lemmon">Github</a></li>
-      <li><a class="row gap0125 px05 py025 ul" href="https://www.twitter.com/lemmon">Twitter</a></li>
+      <li
+        ><a class="row gap0125 p05 anchor" href="https://www.github.com/lemmon"
+          ><span class="ul">Github</span><span class="o20">&#8599;</span></a
+        ></li
+      >
+      <li
+        ><a class="row gap0125 p05 anchor" href="https://www.twitter.com/lemmon"
+          ><span class="ul">Twitter</span><span class="o20">&#8599;</span></a
+        ></li
+      >
     </ul>
   </nav>
 
