@@ -34,13 +34,19 @@ export let data
         <li><a class="block p05 ul" href="/{item.id}">{item.title}</a></li>
       {/each}
       <li
-        ><a class="row gap0125 p05 anchor" href="https://www.github.com/lemmon"
-          ><span class="ul">Github</span><span class="o20">&#8599;</span></a
+        ><a
+          class="row gap0125 p05 anchor"
+          href="https://www.github.com/lemmon"
+          target="_blank"
+          rel="external noreferrer nofollow"><span class="ul">Github</span><span class="o20">&#8599;</span></a
         ></li
       >
       <li
-        ><a class="row gap0125 p05 anchor" href="https://www.twitter.com/lemmon"
-          ><span class="ul">Twitter</span><span class="o20">&#8599;</span></a
+        ><a
+          class="row gap0125 p05 anchor"
+          href="https://www.twitter.com/lemmon"
+          target="_blank"
+          rel="external noreferrer nofollow"><span class="ul">Twitter</span><span class="o20">&#8599;</span></a
         ></li
       >
     </ul>
