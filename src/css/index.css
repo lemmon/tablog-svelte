@@ -13,15 +13,6 @@
 
 /* purgecss start ignore */
 
-.logo {
-  &,
-  & a,
-  & img,
-  & svg {
-    display: block;
-  }
-}
-
 :root {
   --text-decoration-thickness: 1px;
   --text-underline-offset: 2px;

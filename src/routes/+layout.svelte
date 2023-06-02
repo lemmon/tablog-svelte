@@ -21,7 +21,14 @@ export let data
 
 <div class="minvh mindvh col max49 mx">
   <header class="px1 py2 md:p2 row">
-    <figure class="logo"><a href="/" title={config.siteTitle}><Logo /></a></figure>
+    <figure
+      ><a class="row items-center gap1" href="/" title={config.siteTitle}>
+        <Logo />
+        <!-- display site title next to the logo
+        <h1 class="h2 lsh">{config.siteTitle}</h1>
+        -->
+      </a></figure
+    >
   </header>
 
   <main class="span1">
