@@ -38,6 +38,7 @@ export let data
   <footer class="pt2">
     <nav class="py1 md:p1 h5 lh2">
       <ul class="p05 row-wrap gapx15">
+        <li><a class="row gap0125 p05 ul" href="/feed.xml">Feed</a></li>
         {#each data.pages as item (item.id)}
           <li><a class="block p05 ul" href="/{item.id}">{item.title}</a></li>
         {/each}

@@ -2,6 +2,10 @@
 title: Changelog
 ---
 
+#### June 2023
+
+-   RSS Feed
+
 #### March 2023
 
 -   Dark Mode
