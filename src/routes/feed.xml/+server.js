@@ -33,7 +33,7 @@ export function GET({ url }) {
     {
       headers: new Headers([
         ['Cache-Control', 'max-age=0, s-maxage=3600'],
-        ['Content-Type', 'application/rss+xml; charset=UTF-8'],
+        ['Content-Type', 'text/xml; charset=UTF-8'],
       ]),
     }
   )
