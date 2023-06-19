@@ -1,7 +1,10 @@
 .button {
+  --border-width: 1.5px;
+  --vpadding: 1rem;
+  --hpadding: 1.5rem;
   display: block;
-  padding: calc(1rem - 1px) calc(1.5rem - 1px);
-  border: 1px solid;
+  padding: calc(var(--vpadding) - var(--border-width)) calc(var(--hpadding) - var(--border-width));
+  border: var(--border-width) solid;
   border-radius: 9999px;
   min-width: 8rem;
   text-align: center;
