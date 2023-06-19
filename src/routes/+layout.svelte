@@ -35,32 +35,32 @@ export let data
     <slot />
   </main>
 
-  <nav class="py1 md:p1 h5 lh2">
-    <ul class="p05 row-wrap gapx15">
-      {#each data.pages as item (item.id)}
-        <li><a class="block p05 ul" href="/{item.id}">{item.title}</a></li>
-      {/each}
-      <li
-        ><a
-          class="row gap0125 p05 anchor"
-          href="https://www.github.com/lemmon"
-          target="_blank"
-          rel="external noreferrer nofollow"><span class="ul">Github</span><span class="o20">&#8599;</span></a
-        ></li
-      >
-      <li
-        ><a
-          class="row gap0125 p05 anchor"
-          href="https://www.twitter.com/lemmon"
-          target="_blank"
-          rel="external noreferrer nofollow"><span class="ul">Twitter</span><span class="o20">&#8599;</span></a
-        ></li
-      >
-    </ul>
-  </nav>
+  <footer class="pt2">
+    <nav class="py1 md:p1 h5 lh2">
+      <ul class="p05 row-wrap gapx15">
+        {#each data.pages as item (item.id)}
+          <li><a class="block p05 ul" href="/{item.id}">{item.title}</a></li>
+        {/each}
+        <li
+          ><a
+            class="row gap0125 p05 anchor"
+            href="https://www.github.com/lemmon"
+            target="_blank"
+            rel="external noreferrer nofollow"><span class="ul">Github</span><span class="o20">&#8599;</span></a
+          ></li
+        >
+        <li
+          ><a
+            class="row gap0125 p05 anchor"
+            href="https://www.twitter.com/lemmon"
+            target="_blank"
+            rel="external noreferrer nofollow"><span class="ul">Twitter</span><span class="o20">&#8599;</span></a
+          ></li
+        >
+      </ul>
+    </nav>
 
-  <footer class="px1 py2 md:p2">
-    <div class="copy h5 lh2">
+    <div class="px1 py2 md:p2 copy h5 lh2">
       <p
         >&copy; {new Date().getFullYear()}
         {config.siteTitle} <span class="inlineblock mx05 gray lum80">|</span> Built with
