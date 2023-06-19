@@ -18,7 +18,7 @@
     "postcss": "~8.4.0",
     "postcss-import": "~15.1.0",
     "postcss-load-config": "~4.0.0",
-    "postcss-preset-env": "~8.4.0",
+    "postcss-preset-env": "~8.5.0",
     "svelte": "~3.59.0",
     "svelte-bootstrap-icons": "~2.3.0",
     "svelte-preprocess": "~5.0.0",
