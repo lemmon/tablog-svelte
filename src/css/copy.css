@@ -53,7 +53,9 @@
 
 .copy ul > li::before {
   content: '\2014';
-  display: inline-block;
+  display: block;
+  float: left;
+  clear: left;
   width: 3ch;
   margin-left: -3ch;
 }
@@ -69,7 +71,9 @@
 .copy ol > li::before {
   counter-increment: ol;
   content: '0' counter(ol) '.';
-  display: inline-block;
+  display: block;
+  float: left;
+  clear: left;
   width: 3ch;
   margin-left: -3ch;
   font-variant-numeric: tabular-nums;
@@ -77,6 +81,11 @@
 
 .copy ol > li:nth-child(n + 10)::before {
   content: counter(ol) '.';
+}
+
+.copy > ul p,
+.copy > ol p {
+  margin-top: var(--copy-space);
 }
 
 .copy blockquote {
