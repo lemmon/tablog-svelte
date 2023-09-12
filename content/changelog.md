@@ -2,6 +2,10 @@
 title: Changelog
 ---
 
+#### September 2023
+
+-   Svelte 4
+
 #### June 2023
 
 -   RSS Feed
