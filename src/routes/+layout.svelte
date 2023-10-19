@@ -9,6 +9,7 @@ export let data
 
 <svelte:head>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
   <!-- Analytics for Demo Website; you can safely remove this section -->
   {#if data.host === 'tablogdemo.vercel.app'}<script
       defer
