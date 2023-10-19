@@ -45,7 +45,7 @@ export let data
         <li
           ><a
             class="row gap0125 p05 anchor"
-            href="https://www.github.com/lemmon"
+            href="https://github.com/lemmon/tablog-svelte"
             target="_blank"
             rel="external noreferrer nofollow"><span class="ul">Github</span><span class="o20">&#8599;</span></a
           ></li
@@ -67,7 +67,7 @@ export let data
         {config.siteTitle} <span class="inlineblock mx05 gray lum80">|</span> Built with
         <a href="https://tablogdemo.vercel.app/">Tablog Theme</a>
         for SvelteKit by
-        <a href="https://www.lemmonjuice.com/">Lemmon Juice</a></p
+        <a href="https://www.lemmonjuice.com/">Lemmon</a></p
       >
     </div>
   </footer>
