@@ -1,15 +1,17 @@
 <script>
 import config from '/src/config'
+import SEO from '$lib/SEO.svelte'
 import PostSection from '$lib/PostSection.svelte'
 import ArchiveSection from '$lib/ArchiveSection.svelte'
 
 export let data
 </script>
 
-<svelte:head>
-  <title>{config.siteTitle} &ndash; {config.siteTagline}</title>
-  <meta name="description" content={data.post.description} />
-</svelte:head>
+<SEO
+  title={`${config.siteTitle} — ${config.siteTagline}`}
+  description={data.post.description}
+  og={{ title: config.siteTagline }}
+/>
 
 <PostSection post={data.post} />
 
