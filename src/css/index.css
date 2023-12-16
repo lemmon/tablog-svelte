@@ -14,8 +14,8 @@
 /* purgecss start ignore */
 
 :root {
-  --text-decoration-thickness: 1px;
-  --text-underline-offset: 2px;
+  --underline: underline 1px;
+  text-underline-offset: 2px;
 
   /* default colors */
   --color: #040404;

@@ -1,11 +1,5 @@
 .copy {
-  --space: 2.5rem;
-}
-
-.copy > div,
-.copy > table {
-  margin-top: var(--space-primary);
-  margin-bottom: var(--space-primary);
+  --copy-space: 2.5rem;
 }
 
 .copy > h1 {
@@ -33,10 +27,7 @@
 }
 
 .copy a {
-  text-decoration: underline;
-  text-decoration-style: var(--text-decoration-style, solid);
-  text-decoration-thickness: var(--text-decoration-thickness);
-  text-underline-offset: var(--text-underline-offset);
+  text-decoration: var(--underline);
 }
 
 .copy em {
