@@ -2,6 +2,10 @@
 title: Changelog
 ---
 
+#### December 2023
+
+-   Posts Authors
+
 #### October 2023
 
 -   SEO, Open Graph, meta tags

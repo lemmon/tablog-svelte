@@ -9,16 +9,18 @@ import Button from '$lib/Button.svelte'
 import PinAngleFillIcon from 'svelte-bootstrap-icons/lib/PinAngleFill.svelte'
 
 export let limit = 5
+export let posts = $page.data.posts.slice(0, limit || Infinity)
 </script>
 
 <section class="py2">
-  <Header>Archive</Header>
+  <Header><slot name="header">Archive</slot></Header>
   <div class="px1 py175 md:px2">
     <ul class="h5 rlh4">
-      {#each $page.data.posts.slice(0, limit || Infinity) as item (item.id)}
+      {#each posts as item (item.id)}
         <li class="py025 row gap1"
           ><a class="row items-center gap05" style="min-width: 0px;" href="/{item.id}"
-            >{#if item.pinned}<PinAngleFillIcon /> {/if}<span class="block span1 ul ellipsis">{item.title}</span></a
+            >{#if item.pinned}<PinAngleFillIcon />
+            {/if}<span class="block span1 ul ellipsis">{item.title}</span></a
           >
           <span class="span1 border-bottom border-dashed border-gray border-alpha20" style="min-width: 1rem;" />
           <span class="nowrap">{format(new Date(item.date), config.dateFormat)}</span></li

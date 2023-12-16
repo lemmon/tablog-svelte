@@ -1,5 +1,6 @@
 ---
 title: 5 Simple Tips for a More Organized Life
+author: Gabriel Patrick Thompson
 date: 2022-11-02
 ---
 

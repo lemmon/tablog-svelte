@@ -1,5 +1,6 @@
 ---
 title: The Benefits of a Good Night's Sleep
+author: Gabriel Patrick Thompson
 date: 2022-05-15
 ---
 

@@ -1,3 +1,5 @@
+import slugify from '$lib/slugify'
+
 const pages = Object.entries(import.meta.glob('/content/**/*.md', { eager: true }))
   .map(([path, Page]) => ({
     id: path.match(/content\/(.*)\.\w+$/)[1],
@@ -33,6 +35,8 @@ export function loadPosts(props) {
         title: page.meta.title,
         date: page.meta.date,
         pinned: page.meta.pinned,
+        author: page.meta.author,
+        authorId: slugify(page.meta.author),
         description: opt.description ? page.meta.description || createDescription(content) : undefined,
         content: opt.content ? content : undefined,
       }
@@ -47,6 +51,7 @@ export function loadPage(id) {
       ...page.meta,
       id: page.id,
       content,
+      authorId: slugify(page.meta.author),
       description: page.meta.description || createDescription(content),
     }
   )

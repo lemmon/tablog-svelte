@@ -1,5 +1,6 @@
 ---
 title: The Power of Mindfulness in Daily Life
+author: Gabriel Patrick Thompson
 date: 2022-09-11
 ---
 

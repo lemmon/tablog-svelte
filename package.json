@@ -7,6 +7,9 @@
   "bugs": "https://github.com/lemmon/tablog-svelte/issues",
   "author": "lemmon",
   "license": "MIT",
+  "dependencies": {
+    "slugify": "~1.6.0"
+  },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "~5.0.0",
     "@sveltejs/adapter-auto": "~2.1.0",

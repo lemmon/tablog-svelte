@@ -1,5 +1,6 @@
 ---
 title: Ode to Svelte
+author: Gabriel Patrick Thompson
 date: 2022-12-14
 description: Just a random poem written by ChatGPT adoring Svelte.
 ---
