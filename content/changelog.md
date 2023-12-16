@@ -5,6 +5,7 @@ title: Changelog
 #### December 2023
 
 -   Posts Authors
+-   SvelteKit 2
 
 #### October 2023
 
