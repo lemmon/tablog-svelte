@@ -17,7 +17,7 @@
     "@sveltejs/vite-plugin-svelte": "~3.0.0",
     "abrusco": "~0.27.0",
     "cssnano": "~6.0.0",
-    "date-fns": "~2.30.0",
+    "date-fns": "~3.0.0",
     "js-base64": "~3.7.0",
     "mdsvex": "~0.11.0",
     "postcss": "~8.4.0",
