@@ -13,7 +13,7 @@ export let posts = $page.data.posts.slice(0, limit || Infinity)
 </script>
 
 <section class="py2">
-  <Header><slot name="header">Archive</slot></Header>
+  <Header><slot name="header">{config.archiveTitle}</slot></Header>
   <div class="px1 py175 md:px2">
     <ul class="h5 rlh4">
       {#each posts as item (item.id)}

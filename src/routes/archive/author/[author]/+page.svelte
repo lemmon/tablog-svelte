@@ -7,13 +7,14 @@ export let data
 </script>
 
 <SEO
-  title={`${data.author} — ${config.siteTitle} Archive`}
+  title={`${data.author} — ${config.siteTitle} ${config.archiveTitle}`}
   description={config.siteTagline}
-  og={{ title: `${data.author} Archive` }}
+  og={{ title: `${data.author} ${config.archiveTitle}` }}
 />
 
 <ArchiveSection posts={data.posts}>
   <svelte:fragment slot="header"
-    ><a class="ul:hover" href="/archive">Archive</a> <span class="o20">/</span> {data.author}</svelte:fragment
+    ><a class="ul:hover" href="/archive">{config.archiveTitle}</a> <span class="o20">/</span>
+    {data.author}</svelte:fragment
   >
 </ArchiveSection>
