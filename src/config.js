@@ -1,6 +1,6 @@
 const config = {
   siteTitle: 'Tablog',
-  siteTagline: 'Minimalistic Blog Theme',
+  siteTagline: 'Minimalistic Blog Theme for SvelteKit',
   dateFormat: 'MMM dd, yyyy',
 }
 
