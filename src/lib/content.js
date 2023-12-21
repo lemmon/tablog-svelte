@@ -37,6 +37,7 @@ export function loadPosts(props) {
         pinned: page.meta.pinned,
         author: page.meta.author,
         authorId: slugify(page.meta.author),
+        tags: parseTags(page.meta.tags),
         description: opt.description ? page.meta.description || createDescription(content) : undefined,
         content: opt.content ? content : undefined,
       }
@@ -52,9 +53,14 @@ export function loadPage(id) {
       id: page.id,
       content,
       authorId: slugify(page.meta.author),
+      tags: parseTags(page.meta.tags),
       description: page.meta.description || createDescription(content),
     }
   )
+}
+
+function parseTags(tags) {
+  return tags?.split(',').map((x) => [slugify(x), x.trim()])
 }
 
 function createDescription(html) {

@@ -1,6 +1,7 @@
 ---
 title: The Power of Mindfulness in Daily Life
 author: Gabriel Patrick Thompson
+tags: Lifestyle, Life Hacks
 date: 2022-09-11
 ---
 

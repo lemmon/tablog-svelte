@@ -1,6 +1,7 @@
 ---
 title: How to Create a Successful Morning Routine
 author: Gabriel Patrick Thompson
+tags: Lifestyle, Life Hacks
 date: 2022-07-20
 ---
 

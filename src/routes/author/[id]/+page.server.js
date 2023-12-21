@@ -2,10 +2,10 @@ import { error } from '@sveltejs/kit'
 
 export async function load({ params, parent }) {
   const data = await parent()
-  const posts = data.posts.filter((x) => x.authorId === params.author)
+  const posts = data.posts.filter((x) => x.authorId === params.id)
 
   if (!posts.length) {
-    error(404, { message: 'Not found' });
+    error(404, { message: 'Not found' })
   }
 
   return {

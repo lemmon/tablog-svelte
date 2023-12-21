@@ -1,6 +1,7 @@
 ---
 title: The Benefits of a Good Night's Sleep
 author: Gabriel Patrick Thompson
+tags: Lifestyle, Life Hacks
 date: 2022-05-15
 ---
 
