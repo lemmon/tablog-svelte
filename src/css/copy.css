@@ -79,32 +79,46 @@
   margin-top: var(--copy-space);
 }
 
+.copy > h1,
+.copy > h2,
+.copy > h3,
+.copy > h4,
+.copy > h5,
+.copy > h6,
+.copy > blockquote {
+  max-width: max(calc(var(--copy-width) - 2rem), 30rem);
+  text-wrap: balance;
+}
+
 .copy blockquote {
   border-left: 2px solid;
   padding-left: calc(3ch - 2px);
 }
 
+.copy code {
+  font-family: var(--code-font-family);
+  font-size: max(calc(1em - 2px), var(--font-size));
+  background-color: var(--bg-shade);
+}
+
 .copy pre {
   white-space: pre-wrap;
   background-color: var(--bg-shade);
-  padding: 20px 2ch;
+  padding: 20px;
   overflow-wrap: break-word;
   & code {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
     background-color: transparent;
   }
-}
-
-.copy code {
-  font-family: var(--code-font-family);
-  font-size: 16px;
-  line-height: 20px;
-  background-color: var(--bg-shade);
 }
 
 .copy img {
   display: block;
   max-width: 100%;
   height: auto;
+  background-color: var(--bg-shade);
 }
 
 .copy figcaption {
