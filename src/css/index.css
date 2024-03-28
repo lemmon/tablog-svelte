@@ -34,4 +34,16 @@
   }
 }
 
+/* Safari fix */
+
+:root {
+  --underline: underline;
+}
+
+* {
+  text-decoration-thickness: 1px !important;
+}
+
+/* /Safari fix */
+
 /* purgecss end ignore */
