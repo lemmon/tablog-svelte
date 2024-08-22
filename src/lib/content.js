@@ -46,17 +46,16 @@ export function loadPosts(props) {
 
 export function loadPage(id) {
   const page = pages.find((x) => x.id === id)
+  if (!page) return
   const content = page.Page.render().html
-  return (
-    page && {
-      ...page.meta,
-      id: page.id,
-      content,
-      authorId: slugify(page.meta.author),
-      tags: parseTags(page.meta.tags),
-      description: page.meta.description || createDescription(content),
-    }
-  )
+  return {
+    ...page.meta,
+    id: page.id,
+    content,
+    authorId: slugify(page.meta.author),
+    tags: parseTags(page.meta.tags),
+    description: page.meta.description || createDescription(content),
+  }
 }
 
 function parseTags(tags) {
