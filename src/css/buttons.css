@@ -1,27 +1,29 @@
-.button {
-  --border-width: 1.5px;
-  --vpadding: 1rem;
-  --hpadding: 1.5rem;
-  display: block;
-  padding: calc(var(--vpadding) - var(--border-width)) calc(var(--hpadding) - var(--border-width));
-  border: var(--border-width) solid;
-  border-radius: 9999px;
-  min-width: 8rem;
-  text-align: center;
-  &:hover {
-    color: var(--bg-color);
-    background-color: var(--color);
+@layer components {
+  .button {
+    --border-width: 1.5px;
+    --vpadding: 1rem;
+    --hpadding: 1.5rem;
+    display: block;
+    padding: calc(var(--vpadding) - var(--border-width)) calc(var(--hpadding) - var(--border-width));
+    border: var(--border-width) solid;
+    border-radius: 9999px;
+    min-width: 8rem;
+    text-align: center;
+    &:hover {
+      color: var(--color-background);
+      background-color: var(--color-text);
+      border-color: transparent;
+    }
+  }
+
+  .button--smaller {
+    --vpadding: 0.75rem;
+    --hpadding: 1.25rem;
+  }
+
+  .button--primary {
+    color: var(--color-background);
+    background-color: var(--color-text);
     border-color: transparent;
   }
-}
-
-.button,
-.copy a.button {
-  text-decoration: none;
-}
-
-.button--primary {
-  color: var(--bg-color);
-  background-color: var(--color);
-  border-color: transparent;
 }

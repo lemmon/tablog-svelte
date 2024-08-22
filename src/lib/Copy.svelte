@@ -1,5 +1,5 @@
-<div class="px1 py2 md:p2">
-  <div class="copy h5 lh2">
+<div class="px-4 py-8 md:p-8">
+  <div class="copy text-xl">
     <slot />
   </div>
 </div>

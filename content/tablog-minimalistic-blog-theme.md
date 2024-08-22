@@ -1,6 +1,6 @@
 ---
 title: 'Tablog: Minimalistic Blog Theme'
-date: 2022-12-29
+date: 2024-08-22
 pinned: true
 ---
 

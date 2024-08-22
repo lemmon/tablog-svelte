@@ -20,52 +20,54 @@ export let data
 
 <PageLoader />
 
-<div class="minvh mindvh col max49 mx">
-  <header class="px1 py2 md:p2 row">
+<div class="min-h-screen min-h-dvh max-w-container mx-auto flex flex-col">
+  <header class="px-4 py-8 md:p-8 flex flex-row">
     <figure
-      ><a class="row items-center gap1" href="/" title={config.siteTitle}>
+      ><a class="flex flex-row items-center gap-4" href="/" title={config.siteTitle}>
         <Logo />
         <!-- display site title next to the logo
-        <h1 class="h2 lsh">{config.siteTitle}</h1>
+        <h1 class="text-3xl leading-none tracking-tight">{config.siteTitle}</h1>
         -->
       </a></figure
     >
   </header>
 
-  <main class="span1">
+  <main class="flex-1">
     <slot />
   </main>
 
-  <footer class="pt2">
-    <nav class="py1 md:p1 h5 lh2">
-      <ul class="p05 row-wrap gapx15">
-        <li><a class="row gap0125 p05 ul" href="/feed.xml">Feed</a></li>
+  <footer class="mt-8">
+    <nav class="py-4 md:p-4 text-xl">
+      <ul class="p-2 flex flex-row flex-wrap gap-x-6">
+        <li><a class="flex flex-row gap-0.5 p-2 underline" href="/feed.xml">Feed</a></li>
         {#each data.pages as item (item.id)}
-          <li><a class="block p05 ul" href="/{item.id}">{item.title}</a></li>
+          <li><a class="block p-2 underline" href="/{item.id}">{item.title}</a></li>
         {/each}
         <li
           ><a
-            class="row gap0125 p05 anchor"
+            class="flex flex-row gap-0.5 p-2"
             href="https://github.com/lemmon/tablog-svelte"
             target="_blank"
-            rel="external noreferrer nofollow"><span class="ul">Github</span><span class="o20">&#8599;</span></a
+            rel="external noreferrer nofollow"
+            ><span class="underline">Github</span><span class="text-current/20">&#8599;</span></a
           ></li
         >
         <li
           ><a
-            class="row gap0125 p05 anchor"
+            class="flex flex-row gap-0.5 p-2"
             href="https://www.twitter.com/lemmon"
             target="_blank"
-            rel="external noreferrer nofollow"><span class="ul">Twitter</span><span class="o20">&#8599;</span></a
+            rel="external noreferrer nofollow"
+            ><span class="underline">Twitter</span><span class="text-current/20">&#8599;</span></a
           ></li
         >
       </ul>
     </nav>
 
-    <div class="px1 py2 md:p2 copy h5 lh2">
+    <div class="px-4 py-8 md:p-8 copy text-xl">
       <p
         >&copy; {new Date().getFullYear()}
-        {config.siteTitle} <span class="inlineblock mx05 gray lum80">|</span> Built with
+        {config.siteTitle} <span class="inline-block mx-2 text-current/20">|</span> Built with
         <a href="https://tablogdemo.vercel.app/">Tablog Theme</a>
         for SvelteKit by
         <a href="https://www.lemmonjuice.com/">Lemmon</a></p

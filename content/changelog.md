@@ -2,6 +2,10 @@
 title: Changelog
 ---
 
+#### August 2024
+
+-   Tailwind CSS 4.0 alpha
+
 #### December 2023
 
 -   Posts Authors

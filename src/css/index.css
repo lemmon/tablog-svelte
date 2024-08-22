@@ -1,49 +1,40 @@
-/* purgecss start ignore */
-@import 'abrusco/base';
-/* purgecss end ignore */
-@import 'abrusco/modules';
+/*! Tablo Theme | https://tablo.me */
+
+@import 'tailwindcss';
 
 /* purgecss start ignore */
+
 @import 'buttons.css';
 @import 'copy.css';
-/* purgecss end ignore */
 
-@import 'abrusco/utils';
-@import 'abrusco/debug';
+@theme {
+  --color-text: #040404;
+  --color-background: #ffffff;
+  --color-shade: color-mix(in srgb, var(--color-text), transparent 95%);
 
-/* purgecss start ignore */
+  --spacing-container: 49rem;
 
-:root {
-  --code-font-family: JetBrains Mono, JetBrainsMono, Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
-  --underline: underline 1px;
-  text-underline-offset: 2px;
+  --font-size-action: 18px;
+  --font-size-action--line-height: 24px;
+  --font-size-metadata: 20px;
+  --font-size-metadata--line-height: 24px;
+  --font-size-xl--line-height: 1.25;
+}
 
-  /* default colors */
-  --color: #040404;
-  --bg-color: #ffffff;
-  --bg-shade: color-mix(in srgb, var(--color), transparent 95%);
-
-  @media (prefers-color-scheme: dark) {
-    /* dark mode */
-    --color: #f0f0f0;
-    --bg-color: #101010;
-  }
-
-  @media (prefers-color-scheme: light) {
-    /* light mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #f0f0f0;
+    --color-background: #101010;
   }
 }
 
-/* Safari fix */
-
-:root {
-  --underline: underline;
+@layer base {
+  body {
+    color: var(--color-text);
+    background-color: var(--color-background);
+    text-underline-offset: 2px;
+    & * {
+      text-decoration-thickness: 1px;
+    }
+  }
 }
-
-* {
-  text-decoration-thickness: 1px !important;
-}
-
-/* /Safari fix */
-
-/* purgecss end ignore */

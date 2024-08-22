@@ -1,5 +1,6 @@
 <script>
 import { page } from '$app/stores'
+import Header from '$lib/Header.svelte'
 import Action from '$lib/Action.svelte'
 import Button from '$lib/Button.svelte'
 </script>
@@ -8,13 +9,11 @@ import Button from '$lib/Button.svelte'
   <title>Error {$page.status}</title>
 </svelte:head>
 
-<section class="py2">
-  <header class="px1 py2 md:p2">
-    <h1 class="h1 lh1 lsh">Error {$page.status}</h1>
-  </header>
+<section class="py-8">
+  <Header>Error {$page.status}</Header>
 
-  <div class="px1 py2 md:p2">
-    <div class="copy h5 lh2">
+  <div class="px-4 py-8 md:p-8">
+    <div class="copy text-xl">
       {#if $page.status === 404}
         <p>Page not found.</p>
       {:else}
@@ -23,7 +22,7 @@ import Button from '$lib/Button.svelte'
     </div>
   </div>
 
-  <Action class="px1 py2 md:p2">
+  <Action class="px-4 py-8 md:p-8">
     <Button href="/">Return home</Button>
   </Action>
 </section>

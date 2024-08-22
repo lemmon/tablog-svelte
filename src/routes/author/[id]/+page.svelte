@@ -14,7 +14,7 @@ export let data
 
 <ArchiveSection posts={data.posts}>
   <svelte:fragment slot="header"
-    ><a class="ul:hover" href="/archive">{config.archiveTitle}</a> <span class="o20">/</span>
+    ><a class="hover:underline" href="/archive">{config.archiveTitle}</a> <span class="text-current/20">/</span>
     {data.author}</svelte:fragment
   >
 </ArchiveSection>

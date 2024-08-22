@@ -13,30 +13,30 @@ export let post
 </script>
 
 {#key post.id}
-  <section class="py2">
+  <section class="py-8">
     <article>
       <Header>{post.title}</Header>
 
       {#if post.date || post.author || post.tags}
-        <aside class="px1 py075 md:px2 row-wrap gapx2 gapy025">
+        <aside class="px-4 py-3 md:px-8 flex flex-row flex-wrap gap-x-8 gap-y-4 text-metadata">
           {#if post.date}
-            <a class="block py025 h5 rlh4 row gap05" href="/{post.id}"
-              ><span class="row py025"
+            <a class="block py-1 flex flex-row gap-2" href="/{post.id}"
+              ><span class="flex flex-row py-1"
                 >{#if post.pinned}<PinAngleFillIcon />{:else}<CalendarIcon />{/if}</span
-              ><span class="ul">{format(new Date(post.date), config.dateFormat)}</span></a
+              ><span class="underline">{format(new Date(post.date), config.dateFormat)}</span></a
             >
           {/if}
           {#if post.author}
-            <a class="block py025 h5 rlh4 row gap05" href="/author/{post.authorId}"
-              ><span class="row py025"><PencilFillIcon /></span><span class="ul">{post.author}</span></a
+            <a class="block py-1 flex flex-row gap-2" href="/author/{post.authorId}"
+              ><span class="flex flex-row py-1"><PencilFillIcon /></span><span class="underline">{post.author}</span></a
             >
           {/if}
           {#if post.tags}
-            <div class="h5 rlh4 row items-start gap05">
-              <div class="row py05"><TagFillIcon /></div>
+            <div class="flex flex-row items-start gap-2">
+              <div class="flex flex-row py-2"><TagFillIcon /></div>
               <div
                 >{#each post.tags as tag, i}{#if i},
-                  {/if}<a class="inlineblock py025 ul" href="/tag/{tag[0]}">{tag[1]}</a>{/each}</div
+                  {/if}<a class="inline-block py-1 underline" href="/tag/{tag[0]}">{tag[1]}</a>{/each}</div
               >
             </div>
           {/if}

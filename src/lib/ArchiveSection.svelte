@@ -12,24 +12,24 @@ export let limit = 5
 export let posts = $page.data.posts.slice(0, limit || Infinity)
 </script>
 
-<section class="py2">
+<section class="py-8">
   <Header><slot name="header">{config.archiveTitle}</slot></Header>
-  <div class="px1 py175 md:px2">
-    <ul class="h5 rlh4">
+  <div class="px-4 py-7 md:px-8">
+    <ul class="text-metadata">
       {#each posts as item (item.id)}
-        <li class="row gap1"
-          ><a class="py025 row gap05" style="min-width: 0px;" href="/{item.id}"
-            >{#if item.pinned}<PinAngleFillIcon class="my025" />
-            {/if}<span class="block span1 ul ellipsis">{item.title}</span></a
+        <li class="flex flex-row gap-4"
+          ><a class="py-1 flex flex-row gap-2 min-w-0" href="/{item.id}"
+            >{#if item.pinned}<PinAngleFillIcon class="my-1" />
+            {/if}<span class="flex-1 underline truncate">{item.title}</span></a
           >
-          <span class="my025 span1 border-bottom border-dashed border-gray border-alpha20" style="min-width: 1rem;" />
-          <span class="my025 nowrap">{format(new Date(item.date), config.dateFormat)}</span></li
+          <span class="my-1 flex-1 min-w-4 border-b border-dashed text-current/20" />
+          <span class="my-1 whitespace-nowrap">{format(new Date(item.date), config.dateFormat)}</span></li
         >
       {/each}
     </ul>
   </div>
   {#if limit}
-    <Action class="px1 py2 md:p2">
+    <Action class="px-4 py-8 md:p-8">
       <Button href="/archive">All posts &rarr;</Button>
     </Action>
   {/if}

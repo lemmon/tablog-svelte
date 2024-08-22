@@ -15,6 +15,7 @@
     "@sveltejs/adapter-auto": "~3.2.0",
     "@sveltejs/kit": "~2.5.0",
     "@sveltejs/vite-plugin-svelte": "~3.1.0",
+    "@tailwindcss/vite": "~4.0.0-alpha.19",
     "abrusco": "~0.28.0",
     "cssnano": "~7.0.0",
     "date-fns": "~3.6.0",
@@ -27,6 +28,7 @@
     "svelte": "~4.2.0",
     "svelte-bootstrap-icons": "~3.1.0",
     "svelte-preprocess": "~6.0.0",
+    "tailwindcss": "~4.0.0-alpha.19",
     "vite": "~5.4.0"
   },
   "scripts": {

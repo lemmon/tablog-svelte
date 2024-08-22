@@ -5,7 +5,7 @@ export async function load({ params }) {
   const post = loadPage(params.slug)
 
   if (!post) {
-    error(404, { message: 'Not found' });
+    error(404, { message: 'Not Found' })
   }
 
   return {
