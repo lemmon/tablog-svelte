@@ -6,7 +6,7 @@ import Header from '$lib/Header.svelte'
 import Action from '$lib/Action.svelte'
 import Button from '$lib/Button.svelte'
 
-import PinAngleFillIcon from 'svelte-bootstrap-icons/lib/PinAngleFill.svelte'
+import PinIcon from '$lib/icons/PinIcon.svelte'
 
 export let limit = 5
 export let posts = $page.data.posts.slice(0, limit || Infinity)
@@ -19,7 +19,7 @@ export let posts = $page.data.posts.slice(0, limit || Infinity)
       {#each posts as item (item.id)}
         <li class="flex flex-row gap-4"
           ><a class="py-1 flex flex-row gap-2 min-w-0" href="/{item.id}"
-            >{#if item.pinned}<PinAngleFillIcon class="my-1" />
+            >{#if item.pinned}<PinIcon />
             {/if}<span class="flex-1 underline truncate">{item.title}</span></a
           >
           <span class="my-1 flex-1 min-w-4 border-b border-dashed text-current/20" />
