@@ -18,16 +18,16 @@ let { post } = $props();
       <Header>{post.title}</Header>
 
       {#if post.date || post.author || post.tags}
-        <aside class="text-metadata flex flex-row flex-wrap gap-x-8 px-4 py-2 md:px-8">
+        <aside class="text-metadata flex flex-row flex-wrap gap-x-6 px-4 py-3 md:px-8">
           {#if post.date}
-            <a class="flex flex-row gap-2 py-2" href="/{post.id}"
+            <a class="flex flex-row gap-2 py-1" href="/{post.id}"
               ><span class="flex flex-row"
                 >{#if post.pinned}<PinIcon />{:else}<CalendarIcon />{/if}</span
               ><span class="underline">{format(new Date(post.date), config.dateFormat)}</span></a
             >
           {/if}
           {#if post.author}
-            <a class="flex flex-row gap-2 py-2" href="/author/{post.authorId}"
+            <a class="flex flex-row gap-2 py-1" href="/author/{post.authorId}"
               ><span class="flex flex-row"><PenToolIcon /></span><span class="underline"
                 >{post.author}</span
               ></a
@@ -35,12 +35,12 @@ let { post } = $props();
           {/if}
           {#if post.tags}
             <div class="flex flex-row items-start gap-2">
-              <div class="flex flex-row py-2"><BookmarkIcon /></div>
+              <div class="flex flex-row py-1"><BookmarkIcon /></div>
               <div>
                 {#each post.tags as tag, i}
                   {#if i},
                   {/if}
-                  <a class="inline-block py-2 underline" href="/tag/{tag[0]}">{tag[1]}</a>
+                  <a class="inline-block py-1 underline" href="/tag/{tag[0]}">{tag[1]}</a>
                 {/each}
               </div>
             </div>

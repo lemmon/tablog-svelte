@@ -8,6 +8,7 @@ Stay updated with the latest changes and improvements to the Tablog SvelteKit th
 ## November 2024
 
 -   Svelte 5
+-   Visual tweaks
 
 ## August 2024
 
