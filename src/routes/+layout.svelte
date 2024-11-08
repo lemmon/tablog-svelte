@@ -70,7 +70,7 @@ let { data, children } = $props();
         {config.siteTitle} <span class="mx-2 inline-block text-current/20">|</span> Built with
         <a href="https://tablogdemo.vercel.app/">Tablog Theme</a>
         for SvelteKit by
-        <a href="https://www.lemmonjuice.com/">Lemmon</a>
+        <a href="https://www.jakubpelak.com/">Jakub Pelák</a>
       </p>
     </div>
   </footer>
