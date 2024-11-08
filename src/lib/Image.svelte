@@ -1,10 +1,12 @@
 <script>
-export let src
-export let srcset = undefined
-export let width = undefined
-export let height = undefined
-export let alt = ''
-export let caption = undefined
+let {
+  src,
+  srcset = undefined,
+  width = undefined,
+  height = undefined,
+  alt = '',
+  caption = undefined,
+} = $props();
 </script>
 
 <figure>

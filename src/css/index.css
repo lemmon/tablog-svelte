@@ -4,8 +4,8 @@
 
 /* purgecss start ignore */
 
-@import 'buttons.css';
-@import 'copy.css';
+@import './buttons';
+@import './copy';
 
 @theme {
   --color-text: #040404;

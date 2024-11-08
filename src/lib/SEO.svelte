@@ -1,21 +1,20 @@
 <script>
-import { page } from '$app/stores'
-import { Base64 } from 'js-base64'
-import config from '/src/config'
+import { page } from '$app/stores';
+import { Base64 } from 'js-base64';
+import config from '/src/config';
 
-export let title
-export let description
-export let og = undefined
-
-$: image = `https://og.tablo.me/card/${Base64.encode(
-  JSON.stringify({
-    t: og?.title || title,
-    a: og?.author || config.siteTitle,
-  }),
-  true
-)
-  .replace(/\+/g, '-')
-  .replace(/\//g, '_')}.png`
+let { title, description, og = undefined } = $props();
+let image = $derived(
+  `https://og.tablo.me/card/${Base64.encode(
+    JSON.stringify({
+      t: og?.title || title,
+      a: og?.author || config.siteTitle,
+    }),
+    true,
+  )
+    .replace(/\+/g, '-')
+    .replace(/\//g, '_')}.png`,
+);
 </script>
 
 <svelte:head>

@@ -1,11 +1,11 @@
-import config from '/src/config'
-import { loadPosts } from '$lib/content'
+import config from '/src/config';
+import { loadPosts } from '$lib/content';
 
 export function GET({ url }) {
   const posts = loadPosts({
     pinned: false,
     description: true,
-  })
+  });
 
   return new Response(
     `<?xml version='1.0' encoding='utf-8'?>
@@ -25,7 +25,7 @@ export function GET({ url }) {
       <guid isPermaLink="true">${url.origin}/${post.id}</guid>
       <pubDate>${new Date(post.date).toUTCString()}</pubDate>
       <description>${post.description}</description>
-    </item>`
+    </item>`,
       )
       .join(`\n    `)}
   </channel>
@@ -35,6 +35,6 @@ export function GET({ url }) {
         ['Cache-Control', 'max-age=0, s-maxage=3600'],
         ['Content-Type', 'text/xml; charset=UTF-8'],
       ]),
-    }
-  )
+    },
+  );
 }

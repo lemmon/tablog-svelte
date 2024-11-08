@@ -1,8 +1,8 @@
 <script>
-import { page } from '$app/stores'
-import Header from '$lib/Header.svelte'
-import Action from '$lib/Action.svelte'
-import Button from '$lib/Button.svelte'
+import { page } from '$app/stores';
+import Header from '$lib/Header.svelte';
+import Action from '$lib/Action.svelte';
+import Button from '$lib/Button.svelte';
 </script>
 
 <svelte:head>

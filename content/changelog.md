@@ -5,6 +5,10 @@ description: Stay updated with the latest changes and improvements to the Tablog
 
 Stay updated with the latest changes and improvements to the Tablog SvelteKit theme. Explore new features, bug fixes, and enhancements.
 
+## November 2024
+
+-   Svelte 5
+
 ## August 2024
 
 -   Tailwind CSS 4.0 alpha

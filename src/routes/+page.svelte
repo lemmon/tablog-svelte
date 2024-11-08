@@ -1,10 +1,10 @@
 <script>
-import config from '/src/config'
-import SEO from '$lib/SEO.svelte'
-import PostSection from '$lib/PostSection.svelte'
-import ArchiveSection from '$lib/ArchiveSection.svelte'
+import config from '/src/config';
+import SEO from '$lib/SEO.svelte';
+import PostSection from '$lib/PostSection.svelte';
+import ArchiveSection from '$lib/ArchiveSection.svelte';
 
-export let data
+let { data } = $props();
 </script>
 
 <SEO

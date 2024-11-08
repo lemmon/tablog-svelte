@@ -1,4 +1,5 @@
-import slugify from '$lib/slugify'
+import { render } from 'svelte/server';
+import slugify from '$lib/slugify';
 
 const pages = Object.entries(import.meta.glob('/content/**/*.md', { eager: true }))
   .map(([path, Page]) => ({
@@ -6,7 +7,7 @@ const pages = Object.entries(import.meta.glob('/content/**/*.md', { eager: true 
     meta: Page.metadata,
     Page: Page.default,
   }))
-  .filter((x) => x.meta && !x.meta.draft)
+  .filter((x) => x.meta && !x.meta.draft);
 
 export function loadPages() {
   return pages
@@ -15,7 +16,7 @@ export function loadPages() {
     .map((x) => ({
       id: x.id,
       title: x.meta.title,
-    }))
+    }));
 }
 
 export function loadPosts(props) {
@@ -24,12 +25,16 @@ export function loadPosts(props) {
     description: false,
     content: false,
     ...props,
-  }
+  };
   return pages
     .filter((x) => x.meta.date)
-    .sort((a, b) => (opt.pinned ? !a.meta.pinned - !b.meta.pinned : 0) || new Date(b.meta.date) - new Date(a.meta.date))
+    .sort(
+      (a, b) =>
+        (opt.pinned ? !a.meta.pinned - !b.meta.pinned : 0) ||
+        new Date(b.meta.date) - new Date(a.meta.date),
+    )
     .map((page) => {
-      const content = opt.content || opt.description ? page.Page.render().html : null
+      const content = opt.content || opt.description ? render(page.Page).body : null;
       return {
         id: page.id,
         title: page.meta.title,
@@ -38,16 +43,18 @@ export function loadPosts(props) {
         author: page.meta.author,
         authorId: slugify(page.meta.author),
         tags: parseTags(page.meta.tags),
-        description: opt.description ? page.meta.description || createDescription(content) : undefined,
+        description: opt.description
+          ? page.meta.description || createDescription(content)
+          : undefined,
         content: opt.content ? content : undefined,
-      }
-    })
+      };
+    });
 }
 
 export function loadPage(id) {
-  const page = pages.find((x) => x.id === id)
-  if (!page) return
-  const content = page.Page.render().html
+  const page = pages.find((x) => x.id === id);
+  if (!page) return;
+  const content = render(page.Page).body;
   return {
     ...page.meta,
     id: page.id,
@@ -55,13 +62,13 @@ export function loadPage(id) {
     authorId: slugify(page.meta.author),
     tags: parseTags(page.meta.tags),
     description: page.meta.description || createDescription(content),
-  }
+  };
 }
 
 function parseTags(tags) {
-  return tags?.split(',').map((x) => [slugify(x), x.trim()])
+  return tags?.split(',').map((x) => [slugify(x), x.trim()]);
 }
 
 function createDescription(html) {
-  return html.split('\n')[0].replace(/<.+?>/g, '')
+  return html.split('\n')[0].replace(/<.+?>/g, '');
 }

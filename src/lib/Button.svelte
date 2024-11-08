@@ -1,6 +1,5 @@
 <script>
-export let href
-export let primary = false
+let { href, primary = false, children } = $props();
 </script>
 
-<a class="button" class:button--primary={primary} {href}><slot /></a>
+<a class="button" class:button--primary={primary} {href}>{@render children()}</a>
