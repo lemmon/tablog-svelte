@@ -1,5 +1,5 @@
 <script>
-import { navigating } from '$app/stores';
+import { navigating } from '$app/state';
 
 function width() {
   return {
@@ -9,7 +9,7 @@ function width() {
 }
 </script>
 
-{#if $navigating}
+{#if navigating.to}
   <div in:width></div>
 {/if}
 

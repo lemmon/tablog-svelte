@@ -1,6 +1,6 @@
 <script>
 import { format } from 'date-fns';
-import { page } from '$app/stores';
+import { page } from '$app/state';
 import config from '/src/config';
 import Header from '$lib/Header.svelte';
 import Action from '$lib/Action.svelte';
@@ -8,7 +8,7 @@ import Button from '$lib/Button.svelte';
 
 import PinIcon from '$lib/icons/PinIcon.svelte';
 
-let { limit = 5, posts = $page.data.posts.slice(0, limit || Infinity), header } = $props();
+let { limit = 5, posts = page.data.posts.slice(0, limit || Infinity), header } = $props();
 </script>
 
 <section class="py-8">

@@ -8,23 +8,23 @@
 @import './copy';
 
 @theme {
-  --color-text: #040404;
-  --color-background: #ffffff;
+  --color-text: var(--color-neutral-950);
+  --color-background: var(--color-white);
   --color-shade: color-mix(in srgb, var(--color-text), transparent 95%);
 
   --spacing-container: 49rem;
 
-  --font-size-action: 18px;
-  --font-size-action--line-height: 24px;
-  --font-size-metadata: 20px;
-  --font-size-metadata--line-height: 24px;
-  --font-size-xl--line-height: 1.25;
+  --text-action: 18px;
+  --text-action--line-height: 24px;
+  --text-metadata: 20px;
+  --text-metadata--line-height: 24px;
+  --text-xl--line-height: 1.25;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-text: #f0f0f0;
-    --color-background: #101010;
+    --color-text: var(--color-neutral-100);
+    --color-background: var(--color-neutral-950);
   }
 }
 

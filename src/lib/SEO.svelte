@@ -1,5 +1,5 @@
 <script>
-import { page } from '$app/stores';
+import { page } from '$app/state';
 import { Base64 } from 'js-base64';
 import config from '/src/config';
 
@@ -22,7 +22,7 @@ let image = $derived(
   <meta name="description" content={description} />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
-  <meta property="og:url" content={$page.url.href} />
+  <meta property="og:url" content={page.url.href} />
   <meta property="og:type" content="website" />
   <meta property="og:image" content={image} />
   <meta property="og:image:alt" content={title} />
