@@ -4,10 +4,10 @@
 	import config from '/src/config';
 	import Copy from '$lib/Copy.svelte';
 	import Header from '$lib/Header.svelte';
-	import BookmarkIcon from '$lib/icons/BookmarkIcon.svelte';
 	import CalendarIcon from '$lib/icons/CalendarIcon.svelte';
 	import PenToolIcon from '$lib/icons/PenToolIcon.svelte';
 	import PinIcon from '$lib/icons/PinIcon.svelte';
+	import TagIcon from '$lib/icons/TagIcon.svelte';
 
 	let { post } = $props();
 </script>
@@ -35,7 +35,7 @@
 					{/if}
 					{#if post.tags}
 						<div class="flex flex-row items-start gap-2">
-							<div class="flex flex-row py-1"><BookmarkIcon /></div>
+							<div class="flex flex-row py-1"><TagIcon /></div>
 							<div>
 								{#each post.tags as tag, i (tag[0])}
 									{#if i},

@@ -12,6 +12,6 @@
 <figure>
 	<img {src} {srcset} {width} {height} {alt} />
 	{#if caption}
-		<figcaption>{caption}</figcaption>
+		<figcaption class="mt-2 text-center text-sm text-balance">{caption}</figcaption>
 	{/if}
 </figure>
