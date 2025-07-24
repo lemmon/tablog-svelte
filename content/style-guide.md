@@ -30,12 +30,12 @@ fn main() {
 
 Sed sacra est mendosa dixit, nitidis [arboreo per](http://nostris.io/auditodedisses) auratam, de relictum antiquam cernis. Scitanti molitur. Et patuit formae rostro eosdem.
 
--   Est perdere aevum
--   Bibuntur adstupet placavit fluctus
--   Athenae belli in victoris ire currus ait
--   Nihil avus bina quibus et quem mihi
--   Et alter et sanguine lacrimaeque
--   Senex ait maior armis possis Minervae
+- Est perdere aevum
+- Bibuntur adstupet placavit fluctus
+- Athenae belli in victoris ire currus ait
+- Nihil avus bina quibus et quem mihi
+- Et alter et sanguine lacrimaeque
+- Senex ait maior armis possis Minervae
 
 ## Secum amissamque videor
 

@@ -1,140 +1,140 @@
 :root {
-  --copy-space: 2.5rem;
+	--copy-space: 2.5rem;
 }
 
 @layer components {
-  .copy > :first-child {
-    margin-top: 0;
-  }
+	.copy > :first-child {
+		margin-top: 0;
+	}
 
-  .copy > :last-child {
-    margin-bottom: 0;
-  }
+	.copy > :last-child {
+		margin-bottom: 0;
+	}
 
-  .copy > p,
-  .copy > ul,
-  .copy > ol,
-  .copy > dl,
-  .copy > pre,
-  .copy > table,
-  .copy > figure,
-  .copy > blockquote,
-  .copy > aside,
-  .copy > nav,
-  .copy > div {
-    margin-top: var(--copy-space);
-    margin-bottom: var(--copy-space);
-  }
+	.copy > p,
+	.copy > ul,
+	.copy > ol,
+	.copy > dl,
+	.copy > pre,
+	.copy > table,
+	.copy > figure,
+	.copy > blockquote,
+	.copy > aside,
+	.copy > nav,
+	.copy > div {
+		margin-top: var(--copy-space);
+		margin-bottom: var(--copy-space);
+	}
 
-  .copy > h1 {
-    margin-top: 6rem;
-    margin-bottom: 2rem;
-    @apply text-5xl tracking-tight text-balance;
-  }
+	.copy > h1 {
+		margin-top: 6rem;
+		margin-bottom: 2rem;
+		@apply text-5xl tracking-tight text-balance;
+	}
 
-  .copy > h2 {
-    margin-top: 6rem;
-    margin-bottom: 2rem;
-    @apply text-4xl tracking-tight text-balance;
-  }
+	.copy > h2 {
+		margin-top: 6rem;
+		margin-bottom: 2rem;
+		@apply text-4xl tracking-tight text-balance;
+	}
 
-  .copy > h3 {
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-    @apply text-3xl tracking-tight text-balance;
-  }
+	.copy > h3 {
+		margin-top: 4rem;
+		margin-bottom: 2rem;
+		@apply text-3xl tracking-tight text-balance;
+	}
 
-  .copy a:not(.button) {
-    text-decoration-line: underline;
-  }
+	.copy a:not(.button) {
+		text-decoration-line: underline;
+	}
 
-  .copy em {
-    font-style: italic;
-  }
+	.copy em {
+		font-style: italic;
+	}
 
-  .copy strong {
-    font-weight: bold;
-  }
+	.copy strong {
+		font-weight: bold;
+	}
 
-  .copy ul > li {
-    padding-left: 3ch;
-  }
+	.copy ul > li {
+		padding-left: 3ch;
+	}
 
-  .copy ul > li::before {
-    content: '\2014';
-    display: block;
-    float: left;
-    clear: left;
-    width: 3ch;
-    margin-left: -3ch;
-  }
+	.copy ul > li::before {
+		content: '\2014';
+		display: block;
+		float: left;
+		clear: left;
+		width: 3ch;
+		margin-left: -3ch;
+	}
 
-  .copy ol {
-    counter-reset: ol;
-  }
+	.copy ol {
+		counter-reset: ol;
+	}
 
-  .copy ol > li {
-    padding-left: 3ch;
-  }
+	.copy ol > li {
+		padding-left: 3ch;
+	}
 
-  .copy ol > li::before {
-    counter-increment: ol;
-    content: '0' counter(ol) '.';
-    display: block;
-    float: left;
-    clear: left;
-    width: 3ch;
-    margin-left: -3ch;
-    font-variant-numeric: tabular-nums;
-  }
+	.copy ol > li::before {
+		counter-increment: ol;
+		content: '0' counter(ol) '.';
+		display: block;
+		float: left;
+		clear: left;
+		width: 3ch;
+		margin-left: -3ch;
+		font-variant-numeric: tabular-nums;
+	}
 
-  .copy ol > li:nth-child(n + 10)::before {
-    content: counter(ol) '.';
-  }
+	.copy ol > li:nth-child(n + 10)::before {
+		content: counter(ol) '.';
+	}
 
-  .copy > ul p,
-  .copy > ol p {
-    margin-top: var(--copy-space);
-  }
+	.copy > ul p,
+	.copy > ol p {
+		margin-top: var(--copy-space);
+	}
 
-  .copy blockquote {
-    border-left: 2px solid;
-    padding-left: calc(3ch - 2px);
-  }
+	.copy blockquote {
+		border-left: 2px solid;
+		padding-left: calc(3ch - 2px);
+	}
 
-  .copy code {
-    font-size: 16px;
-    padding: 2px 4px;
-    background-color: var(--color-shade);
-  }
+	.copy code {
+		font-size: 16px;
+		padding: 2px 4px;
+		background-color: var(--color-shade);
+	}
 
-  .copy pre {
-    white-space: pre-wrap;
-    background-color: var(--color-shade);
-    padding: 20px;
-    overflow-wrap: break-word;
-    & code {
-      display: block;
-      padding: 0;
-      font-size: 14px;
-      line-height: 20px;
-      background-color: transparent;
-    }
-  }
+	.copy pre {
+		white-space: pre-wrap;
+		background-color: var(--color-shade);
+		padding: 20px;
+		overflow-wrap: break-word;
+		& code {
+			display: block;
+			padding: 0;
+			font-size: 14px;
+			line-height: 20px;
+			background-color: transparent;
+		}
+	}
 
-  .copy img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
+	.copy img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
 
-  .copy figure a {
-    display: block;
-  }
+	.copy figure a {
+		display: block;
+	}
 
-  .copy figcaption {
-    margin-top: 0.5rem;
-    font-size: 1rem;
-    text-align: center;
-  }
+	.copy figcaption {
+		margin-top: 0.5rem;
+		font-size: 1rem;
+		text-align: center;
+	}
 }

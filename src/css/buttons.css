@@ -1,29 +1,29 @@
 @layer components {
-  .button {
-    --border-width: 1.5px;
-    --vpadding: 1rem;
-    --hpadding: 1.5rem;
-    display: block;
-    padding: calc(var(--vpadding) - var(--border-width)) calc(var(--hpadding) - var(--border-width));
-    border: var(--border-width) solid;
-    border-radius: 9999px;
-    min-width: 8rem;
-    text-align: center;
-    &:hover {
-      color: var(--color-background);
-      background-color: var(--color-text);
-      border-color: transparent;
-    }
-  }
+	.button {
+		--border-width: 1.5px;
+		--vpadding: 1rem;
+		--hpadding: 1.5rem;
+		display: block;
+		padding: calc(var(--vpadding) - var(--border-width)) calc(var(--hpadding) - var(--border-width));
+		border: var(--border-width) solid;
+		border-radius: 9999px;
+		min-width: 8rem;
+		text-align: center;
+		&:hover {
+			color: var(--color-background);
+			background-color: var(--color-text);
+			border-color: transparent;
+		}
+	}
 
-  .button--smaller {
-    --vpadding: 0.75rem;
-    --hpadding: 1.25rem;
-  }
+	.button--smaller {
+		--vpadding: 0.75rem;
+		--hpadding: 1.25rem;
+	}
 
-  .button--primary {
-    color: var(--color-background);
-    background-color: var(--color-text);
-    border-color: transparent;
-  }
+	.button--primary {
+		color: var(--color-background);
+		background-color: var(--color-text);
+		border-color: transparent;
+	}
 }
