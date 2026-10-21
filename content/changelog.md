@@ -5,6 +5,11 @@ description: Stay updated with the latest changes and improvements to the Tablog
 
 Stay updated with the latest changes and improvements to the Tablog SvelteKit theme. Explore new features, bug fixes, and enhancements.
 
+## October 2026
+
+- SvelteKit 3
+- Updated tooling and CI
+
 ## July 2025
 
 - Code formatting

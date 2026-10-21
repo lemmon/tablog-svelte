@@ -1,8 +1,8 @@
 <script>
-	import config from '/src/config';
-	import ArchiveSection from '$lib/ArchiveSection.svelte';
-	import PostSection from '$lib/PostSection.svelte';
-	import SEO from '$lib/SEO.svelte';
+	import config from '#config';
+	import ArchiveSection from '#lib/ArchiveSection.svelte';
+	import PostSection from '#lib/PostSection.svelte';
+	import SEO from '#lib/SEO.svelte';
 
 	let { data } = $props();
 </script>

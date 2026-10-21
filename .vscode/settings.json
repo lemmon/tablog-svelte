@@ -1,20 +1,17 @@
 {
 	"editor.formatOnSave": true,
-	"files.exclude": {
-		"**/package-lock.json": true,
-		"**/node_modules": true,
-		"**/.svelte-kit": true,
-		"**/.vercel": true,
-		"**/.vercel_build_output": true,
-		"**/package": true,
-		"**/build": true
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "always"
 	},
-	"[markdown]": { "files.trimTrailingWhitespace": false },
-	"files.trimFinalNewlines": true,
-	"eslint.enable": true,
-	"eslint.workingDirectories": ["app"],
-	"eslint.validate": ["javascript", "javascriptreact", "svelte"],
-	"editor.codeActionsOnSave": { "source.fixAll.eslint": "always" },
-	"[svelte]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-	"prettier.documentSelectors": ["**/*.svelte"]
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	"files.exclude": {
+		".svelte-kit": true,
+		".vercel": true,
+		"build": true,
+		"node_modules": true,
+		"package-lock.json": true,
+		"vite.config.js.timestamp-*": true
+	}
 }

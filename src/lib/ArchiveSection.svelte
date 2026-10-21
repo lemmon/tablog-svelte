@@ -1,12 +1,13 @@
 <script>
 	import { format } from 'date-fns';
 
-	import config from '/src/config';
+	import config from '#config';
+	import Action from '#lib/Action.svelte';
+	import Button from '#lib/Button.svelte';
+	import Header from '#lib/Header.svelte';
+	import PinIcon from '#lib/icons/PinIcon.svelte';
+	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
-	import Action from '$lib/Action.svelte';
-	import Button from '$lib/Button.svelte';
-	import Header from '$lib/Header.svelte';
-	import PinIcon from '$lib/icons/PinIcon.svelte';
 
 	let { limit = 5, posts = page.data.posts.slice(0, limit || Infinity), header } = $props();
 </script>
@@ -16,10 +17,13 @@
 		>{#if header}{@render header()}{:else}{config.archiveTitle}{/if}</Header
 	>
 	<div class="px-4 py-7 md:px-8">
-		<ul class="text-metadata space-y-2 sm:space-y-0">
+		<ul class="space-y-2 text-metadata sm:space-y-0">
 			{#each posts as item (item.id)}
 				<li>
-					<a class="block py-1 sm:flex sm:flex-row sm:items-start sm:gap-4" href="/{item.id}">
+					<a
+						class="block py-1 sm:flex sm:flex-row sm:items-start sm:gap-4"
+						href={resolve('/[slug]', { slug: item.id })}
+					>
 						<span class="block">
 							{#if item.pinned}<span class="float-left mr-1 flex"><PinIcon /></span>{/if}
 							<span class="underline sm:flex-1">{item.title}</span>

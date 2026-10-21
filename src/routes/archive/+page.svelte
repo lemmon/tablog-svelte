@@ -1,7 +1,7 @@
 <script>
-	import config from '/src/config';
-	import ArchiveSection from '$lib/ArchiveSection.svelte';
-	import SEO from '$lib/SEO.svelte';
+	import config from '#config';
+	import ArchiveSection from '#lib/ArchiveSection.svelte';
+	import SEO from '#lib/SEO.svelte';
 </script>
 
 <SEO

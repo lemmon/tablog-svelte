@@ -6,7 +6,7 @@ date: 2024-11-08
 ---
 
 <script>
-import Image from '$lib/Image.svelte'
+import Image from '#lib/Image.svelte'
 </script>
 
 In the quiet lands of webcraft, where simplicity is a rare treasure, the theme called Tablog stood firm and unadorned, crafted for clarity and grace. But a new strength had risen—Runes in Svelte 5, bearing power as ancient runestones bear wisdom. The creator looked upon these Runes, sensing their magic could draw forth an ease and lightness not yet seen, and so the journey to renew Tablog began.

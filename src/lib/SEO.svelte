@@ -1,7 +1,7 @@
 <script>
 	import { Base64 } from 'js-base64';
 
-	import config from '/src/config';
+	import config from '#config';
 	import { page } from '$app/state';
 
 	let { title, description, og = undefined } = $props();

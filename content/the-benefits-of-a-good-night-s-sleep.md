@@ -6,7 +6,7 @@ date: 2022-05-15
 ---
 
 <script>
-import Image from '$lib/Image.svelte'
+import Image from '#lib/Image.svelte'
 </script>
 
 A good night's sleep is essential for our physical and mental health. When we sleep, our bodies and minds have the chance to rest and repair, preparing us for the challenges of the day ahead.

@@ -1,8 +1,9 @@
 <script>
-	import '/src/css/index.css';
+	import '../css/index.css';
 
-	import config from '/src/config';
-	import Logo from '$lib/Logo.svelte';
+	import config from '#config';
+	import Logo from '#lib/Logo.svelte';
+	import { resolve } from '$app/paths';
 
 	import PageLoader from './PageLoader.svelte';
 
@@ -22,10 +23,10 @@
 
 <PageLoader />
 
-<div class="max-w-container mx-auto flex min-h-dvh flex-col">
+<div class="mx-auto flex min-h-dvh max-w-container flex-col">
 	<header class="flex flex-row px-4 py-8 md:p-8">
 		<figure>
-			<a class="flex flex-row items-center gap-4" href="/" title={config.siteTitle}>
+			<a class="flex flex-row items-center gap-4" href={resolve('/')} title={config.siteTitle}>
 				<Logo />
 				<!-- display site title next to the logo
         <h1 class="text-3xl leading-none tracking-tight">{config.siteTitle}</h1>
@@ -41,9 +42,13 @@
 	<footer class="mt-8">
 		<nav class="py-4 text-xl md:p-4">
 			<ul class="flex flex-row flex-wrap gap-x-6 p-2">
-				<li><a class="flex flex-row gap-0.5 p-2 underline" href="/feed.xml">Feed</a></li>
+				<li><a class="flex flex-row gap-0.5 p-2 underline" href={resolve('/feed.xml')}>Feed</a></li>
 				{#each data.pages as item (item.id)}
-					<li><a class="block p-2 underline" href="/{item.id}">{item.title}</a></li>
+					<li>
+						<a class="block p-2 underline" href={resolve('/[slug]', { slug: item.id })}
+							>{item.title}</a
+						>
+					</li>
 				{/each}
 				<li>
 					<a

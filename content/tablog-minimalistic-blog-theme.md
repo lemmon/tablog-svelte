@@ -5,8 +5,8 @@ pinned: true
 ---
 
 <script>
-import Action from '$lib/Action.svelte'
-import Button from '$lib/Button.svelte'
+import Action from '#lib/Action.svelte'
+import Button from '#lib/Button.svelte'
 </script>
 
 Introducing Tablog – a minimalistic blog theme. Simple and elegant template that is perfect for bloggers who want to focus on their content. With its clean and uncluttered design, Tablog allows your readers to easily focus on your words and ideas.

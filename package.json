@@ -1,43 +1,55 @@
 {
-	"type": "module",
 	"name": "tablog-svelte",
 	"private": true,
-	"repository": "lemmon/tablog-svelte",
 	"homepage": "https://github.com/lemmon/tablog-svelte",
 	"bugs": "https://github.com/lemmon/tablog-svelte/issues",
-	"author": "lemmon",
+	"repository": "lemmon/tablog-svelte",
 	"license": "MIT",
+	"author": "Jakub Pelák",
+	"type": "module",
+	"imports": {
+		"#lib": "./src/lib",
+		"#lib/*": "./src/lib/*",
+		"#config": "./src/config.js"
+	},
 	"scripts": {
-		"dev": "vite dev",
 		"build": "vite build",
-		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check",
+		"dev": "vite dev",
 		"format": "prettier --write .",
-		"lint": "prettier --check . && eslint ."
+		"format:check": "prettier --check .",
+		"lint": "prettier --check . && eslint . --max-warnings=0",
+		"prepare": "svelte-kit sync || echo ''",
+		"preview": "vite preview"
 	},
 	"dependencies": {
-		"slugify": "~1.6.0"
+		"slugify": "~1.6.9"
 	},
 	"devDependencies": {
-		"@eslint/compat": "~1",
-		"@eslint/js": "~9",
-		"@sveltejs/adapter-auto": "~6.0",
-		"@sveltejs/kit": "~2.26",
-		"@sveltejs/vite-plugin-svelte": "~6.1",
-		"@tailwindcss/vite": "~4.1",
-		"@types/eslint": "~9.6",
-		"date-fns": "~4.1",
-		"eslint-config-prettier": "~10",
-		"eslint-plugin-simple-import-sort": "~12",
-		"eslint-plugin-svelte": "~3",
-		"eslint": "~9",
-		"globals": "~16",
-		"js-base64": "~3.7",
-		"mdsvex": "~0.12",
-		"prettier-plugin-svelte": "~3",
-		"prettier-plugin-tailwindcss": "~0.6",
-		"prettier": "~3.6",
-		"svelte": "~5.36",
-		"tailwindcss": "~4.1",
-		"vite": "~7.0"
+		"@eslint/js": "~10.0.1",
+		"@sveltejs/adapter-auto": "~8.0.0",
+		"@sveltejs/kit": "~3.1.0",
+		"@sveltejs/vite-plugin-svelte": "~7.3.1",
+		"@tailwindcss/vite": "~4.3.3",
+		"date-fns": "~4.4.0",
+		"eslint": "~10.13.0",
+		"eslint-config-prettier": "~10.1.8",
+		"eslint-plugin-simple-import-sort": "~14.0.0",
+		"eslint-plugin-svelte": "~3.23.1",
+		"globals": "~17.13.0",
+		"js-base64": "~3.9.4",
+		"mdsvex": "~0.12.8",
+		"prettier": "~3.9.10",
+		"prettier-plugin-packagejson": "~3.0.2",
+		"prettier-plugin-svelte": "~4.1.1",
+		"prettier-plugin-tailwindcss": "~0.8.1",
+		"svelte": "~5.57.2",
+		"svelte-check": "~4.7.7",
+		"tailwindcss": "~4.3.3",
+		"typescript": "~6.0.3",
+		"vite": "~8.3.4"
+	},
+	"engines": {
+		"node": ">=22.17"
 	}
 }

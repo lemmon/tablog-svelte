@@ -6,7 +6,7 @@ date: 2022-09-11
 ---
 
 <script>
-import Image from '$lib/Image.svelte'
+import Image from '#lib/Image.svelte'
 </script>
 
 Mindfulness is a powerful tool that can have a profound impact on our daily lives. It involves paying attention to the present moment in a non-judgmental way, allowing us to be fully aware of our thoughts, feelings, and surroundings. This practice can help us to reduce stress, improve our relationships, and increase our overall well-being.

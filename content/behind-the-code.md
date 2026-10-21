@@ -6,7 +6,7 @@ date: 2025-07-24
 ---
 
 <script>
-import Image from '$lib/Image.svelte'
+import Image from '#lib/Image.svelte'
 </script>
 
 It was early, before the sun had settled in, when I sat down and opened the project again. The terminal blinked. A dusty SvelteKit blog I’d left sitting too long. The code was fine. It ran. It breathed. But it had grown wild in places. Dependencies grumbled like an old man’s knees. So I sharpened my tools.

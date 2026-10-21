@@ -1,6 +1,6 @@
 import { error } from '@sveltejs/kit';
 
-import { loadPage } from '$lib/content';
+import { loadPage } from '#lib/content.js';
 
 export async function load({ params }) {
 	const post = loadPage(params.slug);

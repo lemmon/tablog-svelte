@@ -1,0 +1,11 @@
+{
+	"plugins": [
+		"prettier-plugin-svelte",
+		"prettier-plugin-packagejson",
+		"prettier-plugin-tailwindcss"
+	],
+	"useTabs": true,
+	"singleQuote": true,
+	"printWidth": 100,
+	"tailwindStylesheet": "./src/css/index.css"
+}

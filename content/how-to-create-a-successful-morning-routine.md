@@ -6,7 +6,7 @@ date: 2022-07-20
 ---
 
 <script>
-import Image from '$lib/Image.svelte'
+import Image from '#lib/Image.svelte'
 </script>
 
 A successful morning routine can set the tone for the entire day, helping us to feel more focused, productive, and energized. By establishing a consistent and structured morning routine, we can create a sense of order and control in our lives, and set ourselves up for success.
